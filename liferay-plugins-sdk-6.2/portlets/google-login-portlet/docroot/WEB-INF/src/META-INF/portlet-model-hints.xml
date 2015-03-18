@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="it.noovle.googlelogin.services.model.LoginConfiguration">
+		<field name="companyId" type="long" />
+		<field name="clientId" type="String">
+			<hint name="max-length">2000</hint>
+		</field>
+		<field name="clientSecret" type="String">
+			<hint name="max-length">2000</hint>
+		</field>
+		<field name="createUserOnLogin" type="boolean" />
+		<field name="doRedirect" type="boolean" />
+		<field name="doRedirectAfter" type="long" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+</model-hints>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="it.noovle.googlelogin.services">
+	<author></author>
+	<namespace>google_login</namespace>
+	<entity name="LoginConfiguration" local-service="true">			
+        <column name="companyId" type="long" primary="true"></column>
+		<column name="clientId" type="String"></column>
+		<column name="clientSecret" type="String"></column>
+        <column name="createUserOnLogin" type="boolean"></column>
+        <column name="doRedirect" type="boolean"></column>
+        <column name="doRedirectAfter" type="long"></column>        
+		<column name="modifiedDate" type="Date"></column>
+	</entity>
+</service-builder>

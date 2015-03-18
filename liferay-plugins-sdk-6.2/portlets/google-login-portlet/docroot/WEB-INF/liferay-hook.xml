@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hook PUBLIC "-//Liferay//DTD Hook 6.2.0//EN" "http://www.liferay.com/dtd/liferay-hook_6_2_0.dtd">
+
+<hook>
+	<portal-properties>portal.properties</portal-properties>
+    <language-properties>content/Language.properties</language-properties>
+    <language-properties>content/Language_it.properties</language-properties>
+    <custom-jsp-dir>/html/liferaylogin</custom-jsp-dir>
+	<struts-action>
+		<struts-action-path>/portal/rest/noovle/openidconnect/oauth2callback</struts-action-path>
+		<struts-action-impl>it.noovle.googlelogin.openidconnect.Oauth2Callback</struts-action-impl>
+	</struts-action>
+</hook>

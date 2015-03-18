@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0">
+	
+	<portlet>
+		<portlet-name>1</portlet-name>
+		<display-name>Google Apps for Work SSO</display-name>
+		<portlet-class>it.noovle.googlelogin.portlet.GoogleLoginPortlet</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/googlelogin/view.jsp</value>
+		</init-param>
+		<init-param>
+			<name>check-auth-token</name>
+			<value>false</value>
+		</init-param>		
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>			
+		</supports>
+		<resource-bundle>content.Language</resource-bundle>
+		<portlet-info>
+			<title>Google Apps for Work SSO</title>
+			<short-title>Google Apps for Work SSO</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+	
+	<portlet>
+		<portlet-name>2</portlet-name>
+		<display-name>Google Apps for Work SSO</display-name>
+		<portlet-class>it.noovle.googlelogin.portlet.GoogleLoginConfigurationPortlet</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/googleloginconfiguration/view.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<resource-bundle>content.Language</resource-bundle>
+		<portlet-info>
+			<title>Google Apps for Work SSO</title>
+			<short-title>Google Apps for Work SSO</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+	</portlet>	
+</portlet-app>

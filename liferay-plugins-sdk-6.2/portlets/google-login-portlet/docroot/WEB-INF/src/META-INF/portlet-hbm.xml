@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="it.noovle.googlelogin.services.model.LoginConfiguration" />
+	<class name="it.noovle.googlelogin.services.model.impl.LoginConfigurationImpl" table="google_login_LoginConfiguration">
+		<cache usage="read-write" />
+		<id name="companyId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="clientId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="clientSecret" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createUserOnLogin" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+		<property name="doRedirect" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+		<property name="doRedirectAfter" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+	</class>
+</hibernate-mapping>
